@@ -13,12 +13,12 @@ let domain = [".com", ".es"];
 window.onload = function() {
   let textHTML = '<ul class="list-group">';
 
-  for (let ipronoun = 0; ipronoun < pronoun.length; ipronoun++) {
-    for (let iadj = 0; iadj < adj.length; iadj++) {
-      for (let inoun = 0; inoun < noun.length; inoun++) {
-        for (let idomain = 0; idomain < domain.length; idomain++) {
+  for (let iPronoun = 0; iPronoun < pronoun.length; iPronoun++) {
+    for (let iAdj = 0; iAdj < adj.length; iAdj++) {
+      for (let iNoun = 0; iNoun < noun.length; iNoun++) {
+        for (let iDomain = 0; iDomain < domain.length; iDomain++) {
           let fullDomain =
-            pronoun[ipronoun] + adj[iadj] + noun[inoun] + domain[idomain];
+            pronoun[iPronoun] + adj[iAdj] + noun[iNoun] + domain[iDomain];
           textHTML += '<li class="list-group-item">' + fullDomain + "</li>";
         }
       }
